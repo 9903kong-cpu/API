@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head><link rel="icon" href="data:,">
+
+  <title>Product Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Product Manager</h1>
+
+    <div class="form-card">
+      <h3>Add Product</h3>
+      <form id="productForm">
+        <input type="text" id="name" placeholder="Name" required />
+        <input type="text" id="description" placeholder="Description" required />
+        <input type="number" id="price" placeholder="Price" required />
+        <input type="number" id="stock" placeholder="Stock" required />
+        <button type="submit">Add Product</button>
+      </form>
+    </div>
+
+   <div class="product-list">
+  <h3>All Products</h3>
+
+  <input type="text" id="search" placeholder="Search product..." />
+
+  <ul id="products"></ul>
+</div>
+
+  </div>
+
+  <script src="main.js"></script>
+  <div id="toast" class="toast"></div>
+
+</body>
+</html>
